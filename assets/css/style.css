@@ -1,0 +1,84 @@
+@font-face {
+  font-family: avenir;
+  src: url(/assets/fonts/AvenirLTStd-Roman.otf);
+}
+
+.body {
+  height: 31rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.4))), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
+  background-image: linear-gradient(rgba(34, 33, 33, 0.4)), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login {
+  font-family: avenir;
+  margin-top: 30%;
+  margin-left: 112%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+  height: 24rem;
+  background: #ffffff;
+  border-radius: 25px;
+}
+
+.login-header {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.login-input {
+  border: none;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid black;
+  width: 80%;
+  min-width: 80%;
+  max-width: 120%;
+  color: #2b2b9c;
+  padding: 3px 15px 7px 12px;
+}
+
+.login-input::-webkit-input-placeholder {
+  color: grey;
+  font-size: 30px;
+  font-family: avenir;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.login-submit {
+  margin-left: 4.9rem;
+  width: 55%;
+  height: 3.3rem;
+  border-radius: 35px;
+  color: #ffffff;
+  background-color: #2b2b9c;
+  font-family: avenir;
+  font-size: 20px;
+  border: none;
+}
+
+.login-submit:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .login {
+    margin-left: 6%;
+  }
+  .body {
+    height: 35.05rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

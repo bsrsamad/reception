@@ -1,0 +1,77 @@
+$color-blue-regular: #0c0c63;
+$color-blue: #2b2b9c;
+$color-orange: #ff9933;
+$color-white: #ffffff;
+
+@font-face {
+  font-family: avenir;
+  src: url(/assets/fonts/AvenirLTStd-Roman.otf);
+}
+.body {
+  height: 31rem;
+  background-image: linear-gradient(rgba(34, 33, 33, 0.4)),
+    url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login {
+  font-family: avenir;
+  margin-top: 30%;
+  margin-left: 112%;
+  align-content: center;
+  align-self: center;
+  width: 90%;
+  height: 24rem;
+  background: $color-white;
+  border-radius: 25px;
+  &-header {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: black;
+  }
+
+  &-input {
+    border: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid black;
+    width: 80%;
+    min-width: 80%;
+    max-width: 120%;
+    color: $color-blue;
+    padding: 3px 15px 7px 12px;
+    &::-webkit-input-placeholder {
+      color: grey;
+      font-size: 30px;
+      font-family: avenir;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &-submit {
+    margin-left: 4.9rem;
+    width: 55%;
+    height: 3.3rem;
+    border-radius: 35px;
+    color: $color-white;
+    background-color: $color-blue;
+    font-family: avenir;
+    font-size: 20px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .login {
+    margin-left: 6%;
+  }
+  .body {
+    height: 35.05rem;
+  }
+}
