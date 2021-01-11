@@ -73,12 +73,196 @@
   outline: none;
 }
 
-@media screen and (max-width: 576px) {
+.sidebar1 {
+  background: #0c0c63;
+}
+
+.main {
+  background: #ffffff;
+  padding-top: 0.5rem;
+}
+
+.identity {
+  margin: 7px;
+  background-color: #2b2b9c;
+  height: 13rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.identity-header-1 {
+  color: #ffffff;
+  font-size: 3vw;
+  margin-bottom: -0.5rem;
+  font-family: avenir;
+}
+
+.identity-header-2 {
+  color: #ffffff;
+  font-size: 3vw;
+  font-family: avenir;
+}
+
+.identity-header-3 {
+  color: #ffffff;
+  font-size: 1.5vw;
+  font-family: avenir;
+}
+
+.side-option {
+  color: #ffffff;
+  margin: auto;
+}
+
+.side-option-items {
+  padding: 40px 5px 10px;
+  font-size: 2.3vw;
+  font-family: avenir;
+}
+
+.click {
+  color: #ff9933;
+}
+
+.line {
+  background-color: #2b2b9c;
+  height: 2px;
+  width: 18rem;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.owner-id {
+  margin: 2rem;
+  font-family: avenir;
+  font-size: 8vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/*sidebar*/
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  opacity: 0;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  /* If you want a transition effect */
+  padding: 20px;
+}
+
+/*sidebar end*/
+@media screen and (max-width: 576px), (max-height: 450px) {
   .login {
     margin-left: 6%;
   }
   .body {
     height: 35.05rem;
+  }
+  .sidebar1 {
+    display: none;
+  }
+  .sidebar {
+    z-index: 100;
+  }
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+  .identity {
+    height: 18%;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  .identity-header-1 {
+    font-size: 6vw;
+    margin-bottom: -0.5rem;
+  }
+  .identity-header-2 {
+    font-size: 6vw;
+    margin-bottom: 1rem;
+  }
+  .identity-header-3 {
+    font-size: 3vw;
+  }
+  .side-option {
+    color: #ffffff;
+    margin: auto;
+  }
+  .side-option-items {
+    padding: 20px 1px 15px;
+    font-size: 7vw;
+    font-family: avenir;
+  }
+  .sidebar {
+    background: #0c0c63;
+  }
+  .openbtn {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
