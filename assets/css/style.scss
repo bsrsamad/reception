@@ -15,6 +15,10 @@ $font-family: avenir;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.logoimg {
+  height: 22vh;
+  padding: 15px;
+}
 .login {
   font-family: $font-family;
   margin-top: 30%;
@@ -123,7 +127,16 @@ $font-family: avenir;
   font-size: 8vh;
   display: inline-flex;
 }
-
+.brand {
+  &-name {
+    font-family: $font-family;
+    height: 30px;
+    color: #ffffff;
+    padding: 2rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+  }
+}
 /*sidebar*/
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -163,14 +176,21 @@ $font-family: avenir;
 }
 
 /* The button used to open the sidebar */
+.logoimg2 {
+  height: 1vh;
+  visibility: hidden;
+}
 .openbtn {
-  font-size: 20px;
+  font-size: 1px;
   cursor: pointer;
   background-color: #111;
   color: white;
   padding: 10px 15px;
   border: none;
-  opacity: 0;
+  visibility: hidden;
+  // opacity: 0;
+  // cursor: not-allowed;
+  // pointer-events: none;
 }
 
 .openbtn:hover {
@@ -180,10 +200,16 @@ $font-family: avenir;
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
-  padding: 20px;
 }
 /*sidebar end*/
 @media screen and (max-width: 576px), (max-height: 450px) {
+  #main {
+    padding: 10px; /* If you want a transition effect */
+  }
+  .logoimg2 {
+    height: 10vh;
+    visibility: visible;
+  }
   .login {
     margin-left: 6%;
   }
@@ -233,6 +259,10 @@ $font-family: avenir;
     background: #0c0c63;
   }
   .openbtn {
-    opacity: 1;
+    visibility: visible;
+    font-size: 3vh;
+  }
+  .body {
+    height: 85vh;
   }
 }

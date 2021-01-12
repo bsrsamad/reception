@@ -11,6 +11,11 @@
   background-repeat: no-repeat;
 }
 
+.logoimg {
+  height: 22vh;
+  padding: 15px;
+}
+
 .login {
   font-family: avenir;
   margin-top: 30%;
@@ -141,6 +146,15 @@
   display: inline-flex;
 }
 
+.brand-name {
+  font-family: avenir;
+  height: 30px;
+  color: #ffffff;
+  padding: 2rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+}
+
 /*sidebar*/
 .sidebar {
   height: 100%;
@@ -190,14 +204,19 @@
 }
 
 /* The button used to open the sidebar */
+.logoimg2 {
+  height: 1vh;
+  visibility: hidden;
+}
+
 .openbtn {
-  font-size: 20px;
+  font-size: 1px;
   cursor: pointer;
   background-color: #111;
   color: white;
   padding: 10px 15px;
   border: none;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .openbtn:hover {
@@ -209,11 +228,18 @@
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
   /* If you want a transition effect */
-  padding: 20px;
 }
 
 /*sidebar end*/
 @media screen and (max-width: 576px), (max-height: 450px) {
+  #main {
+    padding: 10px;
+    /* If you want a transition effect */
+  }
+  .logoimg2 {
+    height: 10vh;
+    visibility: visible;
+  }
   .login {
     margin-left: 6%;
   }
@@ -262,7 +288,11 @@
     background: #0c0c63;
   }
   .openbtn {
-    opacity: 1;
+    visibility: visible;
+    font-size: 3vh;
+  }
+  .body {
+    height: 85vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
