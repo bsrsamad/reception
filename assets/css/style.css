@@ -289,7 +289,8 @@
   }
   .openbtn {
     visibility: visible;
-    font-size: 3vh;
+    margin-left: 13vh;
+    font-size: 6vh;
   }
   .body {
     height: 85vh;
