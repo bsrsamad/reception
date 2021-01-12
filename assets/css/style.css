@@ -230,6 +230,36 @@
   /* If you want a transition effect */
 }
 
+.sidebar1 a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: avenir;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar1 a:visited {
+  color: #ffffff;
+}
+
+.sidebar1 a:hover {
+  color: #ff9933;
+}
+
+.sidebar a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: avenir;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:visited {
+  color: #ffffff;
+}
+
 /*sidebar end*/
 @media screen and (max-width: 576px), (max-height: 450px) {
   #main {

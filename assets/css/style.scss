@@ -201,6 +201,29 @@ $font-family: avenir;
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
 }
+.sidebar1 a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: $font-family;
+  transition: 0.3s;
+}
+.sidebar1 a:visited {
+  color: #ffffff;
+}
+.sidebar1 a:hover {
+  color: $color-orange;
+}
+.sidebar a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: $font-family;
+  transition: 0.3s;
+}
+.sidebar a:visited {
+  color: #ffffff;
+}
 /*sidebar end*/
 @media screen and (max-width: 576px), (max-height: 450px) {
   #main {
