@@ -257,8 +257,6 @@
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 35px;
-  min-width: 4rem;
-  max-width: 22rem;
 }
 
 .login-header {
@@ -272,6 +270,8 @@
 .login-container {
   padding-top: 20vh;
   padding-bottom: 12vh;
+  min-width: 4rem;
+  max-width: 22rem;
 }
 
 .login-input {

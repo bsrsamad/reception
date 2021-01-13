@@ -216,8 +216,6 @@ $font-family: avenir;
   width: 25rem;
   align-self: center;
   border-radius: 35px;
-  min-width: 4rem;
-  max-width: 22rem;
 
   &-header {
     text-align: center;
@@ -230,6 +228,8 @@ $font-family: avenir;
   &-container {
     padding-top: 20vh;
     padding-bottom: 12vh;
+    min-width: 4rem;
+    max-width: 22rem;
   }
 
   // &-form {
