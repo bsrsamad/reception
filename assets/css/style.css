@@ -3,95 +3,91 @@
   src: url(/assets/fonts/AvenirLTStd-Roman.otf);
 }
 
-.body {
-  height: 31rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.4))), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
-  background-image: linear-gradient(rgba(34, 33, 33, 0.4)), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.rows {
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colums {
+  width: 23%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #0c0c63;
+}
+
+.colums a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: avenir;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.colums a:visited {
+  color: #ffffff;
+}
+
+.colums a:hover {
+  color: #ff9933;
+}
+
+.colum2 {
+  width: 77%;
+  color: #ff9933;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secrow {
+  width: 100%;
+}
+
+.space {
+  height: 24vh;
+  width: 2vh;
+}
+
+.seccol {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.seccol-col {
+  padding: 1.5rem;
+}
+
+.seccol-header {
+  color: #ff9933;
+  font-family: avenir;
+  font-size: 5vh;
+}
+
+.seccol-input {
+  width: 80%;
+  border-radius: 6px;
+  color: #0c0c63;
+  font-family: avenir;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.seccol-input:focus {
+  outline: none;
 }
 
 .logoimg {
-  height: 22vh;
+  width: 47vh;
   padding: 15px;
 }
 
-.login {
-  font-family: avenir;
-  margin-top: 30%;
-  margin-left: 112%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 90%;
-  height: 24rem;
-  background: #ffffff;
-  border-radius: 25px;
-}
-
-.login-header {
-  text-align: center;
-  padding-top: 1rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: black;
-}
-
-.login-input {
-  border: none;
-  font-size: 1rem;
-  margin-left: 2rem;
-  margin-bottom: 4rem;
-  border-bottom: 1px solid black;
-  width: 80%;
-  min-width: 80%;
-  max-width: 120%;
-  color: #2b2b9c;
-  padding: 3px 15px 7px 12px;
-}
-
-.login-input::-webkit-input-placeholder {
-  color: grey;
-  font-size: 30px;
-  font-family: avenir;
-}
-
-.login-input:focus {
-  outline: none;
-}
-
-.login-submit {
-  margin-left: 4.9rem;
-  width: 55%;
-  height: 3.3rem;
-  border-radius: 35px;
-  color: #ffffff;
-  background-color: #2b2b9c;
-  font-family: avenir;
-  font-size: 20px;
-  border: none;
-}
-
-.login-submit:focus {
-  outline: none;
-}
-
-.sidebar1 {
-  background: #0c0c63;
-}
-
-.main {
-  background: #ffffff;
-  padding-top: 0.5rem;
-}
-
 .identity {
-  margin: 7px;
   background-color: #2b2b9c;
-  height: 13rem;
-  width: 100%;
   padding: 2rem;
 }
 
@@ -125,10 +121,6 @@
   font-family: avenir;
 }
 
-.click {
-  color: #ff9933;
-}
-
 .line {
   background-color: #2b2b9c;
   height: 2px;
@@ -137,25 +129,32 @@
   border-radius: 20px;
 }
 
-.owner-id {
-  margin: 2rem;
+.button {
+  margin-left: 10vh;
+  background-color: white;
+  color: #ff9933;
+  border: 2px solid #0c0c63;
+  width: 45vh;
+  padding: 2.5vh;
+  border-radius: 35px;
+  font-size: 4vh;
   font-family: avenir;
-  font-size: 8vh;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
-.brand-name {
-  font-family: avenir;
-  height: 30px;
-  color: #ffffff;
-  padding: 2rem;
-  padding-bottom: 0.2rem;
-  padding-top: 0.2rem;
+.button:hover {
+  background-color: #0c0c63;
+  /* Green */
+  color: #ff9933;
+  -webkit-transform: translate(0.1px, -1px);
+          transform: translate(0.1px, -1px);
 }
 
-/*sidebar*/
+.button:focus {
+  outline: none;
+}
+
 .sidebar {
   height: 100%;
   /* 100% Full-height */
@@ -176,9 +175,11 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidebar */
+  /* The sidebar links */
+  /* When you mouse over the navigation links, change their color */
+  /* Position and style the close button (top right corner) */
 }
 
-/* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -189,18 +190,29 @@
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.sidebar a:link {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: avenir;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:visited {
+  color: #ffffff;
 }
 
 /* The button used to open the sidebar */
@@ -219,7 +231,7 @@
   visibility: hidden;
 }
 
-.openbtn:hover {
+.openbtn :hover {
   background-color: #444;
 }
 
@@ -230,63 +242,136 @@
   /* If you want a transition effect */
 }
 
-.sidebar1 a:link {
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
+.all {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.4))), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
+  background-image: linear-gradient(rgba(34, 33, 33, 0.4)), url(../img/closeup-heart-stethoscope-cardiovascular-checkup-concept.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.login {
   font-family: avenir;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  background: #ffffff;
+  width: 25rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 35px;
+  min-width: 10rem;
+  max-width: 22rem;
 }
 
-.sidebar1 a:visited {
+.login-header {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #0c0c63;
+}
+
+.login-container {
+  padding-top: 20vh;
+  padding-bottom: 12vh;
+}
+
+.login-input {
+  border: none;
+  font-size: 3.5vh;
+  border-bottom: 1px solid black;
+  width: 70%;
+  margin: 2rem;
+  color: #2b2b9c;
+  padding: 3px 15px 7px 12px;
+}
+
+.login-input::-webkit-input-placeholder {
+  color: grey;
+  font-size: 30px;
+  font-family: avenir;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.login-submit {
+  width: 50%;
+  height: 3.3rem;
+  border-radius: 35px;
   color: #ffffff;
+  background-color: #2b2b9c;
+  font-family: avenir;
+  font-size: 20px;
+  border: none;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
 }
 
-.sidebar1 a:hover {
+.login-submit:focus {
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0c0c63;
   color: #ff9933;
-}
-
-.sidebar a:link {
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
   font-family: avenir;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  font-size: 3.5vh;
+  text-align: center;
 }
 
-.sidebar a:visited {
-  color: #ffffff;
-}
-
-/*sidebar end*/
 @media screen and (max-width: 576px), (max-height: 450px) {
+  .button {
+    width: 25vh;
+    padding: 0.5vh;
+    margin: 0vh;
+    margin-top: 2rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-color: #0c0c63;
+  }
+  .rows {
+    display: block;
+  }
+  .colums {
+    width: 100%;
+    display: none;
+  }
+  .colum2 {
+    width: 100%;
+    display: inline;
+  }
+  .seccol {
+    margin-top: 1px;
+    padding-left: 2rem;
+    width: 100%;
+  }
+  .seccol-col {
+    padding: 0.5rem;
+  }
+  .seccol-input {
+    width: 80%;
+  }
+  .sidebar {
+    z-index: 100;
+    padding-top: 15px;
+    font-size: 18px;
+    background: #0c0c63;
+  }
   #main {
-    padding: 10px;
-    /* If you want a transition effect */
+    padding-top: 2px;
   }
   .logoimg2 {
     height: 10vh;
     visibility: visible;
-  }
-  .login {
-    margin-left: 6%;
+    padding-left: 15px;
   }
   .body {
     height: 35.05rem;
-  }
-  .sidebar1 {
-    display: none;
-  }
-  .sidebar {
-    z-index: 100;
-  }
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
   }
   .identity {
     height: 18%;
@@ -325,6 +410,9 @@
   }
   .body {
     height: 85vh;
+  }
+  .space {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
