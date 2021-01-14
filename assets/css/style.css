@@ -1,6 +1,6 @@
 @font-face {
   font-family: avenir;
-  src: url(/assets/fonts/AvenirLTStd-Roman.otf);
+  src: url(./assets/fonts/AvenirLTStd-Roman.otf);
 }
 
 .rows {
