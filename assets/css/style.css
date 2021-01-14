@@ -1,6 +1,6 @@
 @font-face {
   font-family: avenir;
-  src: url(./assets/fonts/AvenirLTStd-Roman.otf);
+  src: url(../fonts/AvenirLTStd-Roman.otf);
 }
 
 .rows {
@@ -39,6 +39,9 @@
   width: 77%;
   color: #ff9933;
   background-color: #ffffff;
+}
+
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +323,144 @@
   text-align: center;
 }
 
-@media screen and (max-width: 576px), (max-height: 450px) {
+.paymentlist {
+  margin-left: 5vh;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.paymentlist-head {
+  background-color: #0c0c63;
+  width: 80%;
+  font-size: 5vh;
+  padding-left: 3vh;
+  border-radius: 6px;
+}
+
+.paymentlist-options {
+  font-size: 4vh;
+  padding: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paymentlist-options-cols {
+  width: 50%;
+}
+
+.line2 {
+  background-color: #2b2b9c;
+  height: 3px;
+  width: 80%;
+  background-color: #2b2b9c;
+  border-radius: 20px;
+}
+
+.update {
+  margin-left: 5vh;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.update-first {
+  width: 80%;
+  font-size: 5vh;
+  padding-left: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.update-first-submit {
+  width: 30%;
+}
+
+.update-first-submit-button {
+  background-color: #0c0c63;
+  color: #ff9933;
+  border: none;
+  width: 90%;
+  margin: auto;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 5vh;
+  font-family: avenir;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.update-first-submit-button:hover {
+  background-color: #0c0c63;
+  /* Green */
+  color: #ff9933;
+  -webkit-transform: translate(0.1px, -1px);
+          transform: translate(0.1px, -1px);
+}
+
+.update-first-submit-button:focus {
+  outline: none;
+}
+
+.update-first-input {
+  width: 70%;
+}
+
+.update-first-input-box {
+  border: none;
+  font-size: 3.5vh;
+  border: 1.5px solid black;
+  width: 90%;
+  color: #2b2b9c;
+  padding: 6px 15px 6px 12px;
+  border-radius: 10px;
+}
+
+.update-first-input-box::-webkit-input-placeholder {
+  color: #999898;
+  font-size: 30px;
+  font-family: avenir;
+}
+
+.update-first-input-box:focus {
+  outline: none;
+}
+
+.update-header {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  font-size: 5vh;
+}
+
+.update-header-no {
+  width: 10%;
+}
+
+.update-header-name {
+  width: 40%;
+}
+
+.update-header-age {
+  width: 20%;
+}
+
+.update-header-gender {
+  width: 30%;
+}
+
+.update-header-items {
+  margin-top: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  font-size: 5vh;
+}
+
+@media screen and (max-width: 576px), (max-height: 550px) {
   .button {
     width: 25vh;
     padding: 0.5vh;
