@@ -227,8 +227,8 @@ $font-family: avenir;
   &-container {
     padding-top: 20vh;
     padding-bottom: 12vh;
-    min-width: 1rem;
-    max-width: 22rem;
+    min-width: 5rem;
+    max-width: 25rem;
     margin: auto;
   }
 
@@ -370,5 +370,8 @@ $font-family: avenir;
   }
   .space {
     display: none;
+  }
+  .login {
+    width: 50%;
   }
 }
