@@ -366,9 +366,6 @@ $font-family: avenir;
     display: flex;
     width: 90%;
     font-size: 5vh;
-    &-no {
-      width: 10%;
-    }
     &-name {
       width: 40%;
     }
@@ -387,6 +384,9 @@ $font-family: avenir;
   }
 }
 @media screen and (max-width: 576px), (max-height: 550px) {
+  .flex {
+    display: block;
+  }
   .button {
     width: 25vh;
     padding: 0.5vh;
@@ -468,7 +468,7 @@ $font-family: avenir;
   }
   .openbtn {
     visibility: visible;
-    margin-left: 13vh;
+    margin-left: 15%;
     font-size: 6vh;
     border-radius: 10px;
   }
@@ -480,5 +480,78 @@ $font-family: avenir;
   }
   .login {
     width: 87%;
+  }
+  .update {
+    margin-left: 0vh;
+    margin-top: 1vh;
+    width: 100%;
+    &-first {
+      width: 100%;
+      font-size: 1vh;
+      padding-left: 3vh;
+      display: flex;
+      &-submit {
+        width: 40%;
+        &-button {
+          width: 100%;
+          padding: 5px;
+          font-size: 3.7vh;
+          transition-duration: 0.4s;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      &-input {
+        width: 70%;
+        &-box {
+          width: 85%;
+          color: $color-blue;
+          padding: 6px 15px 6px 12px;
+          margin-left: 5%;
+          border-radius: 10px;
+          &::-webkit-input-placeholder {
+            color: rgb(255, 255, 255);
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    &-header {
+      margin-top: 5vh;
+      display: flex;
+      width: 100%;
+      font-size: 3vh;
+
+      &-name {
+        width: 40%;
+        font-size: 3vh;
+        margin-left: 3vh;
+      }
+      &-age {
+        width: 20%;
+        font-size: 3vh;
+        margin-left: 5vh;
+      }
+      &-gender {
+        width: 40%;
+        font-size: 3vh;
+        margin-left: 2vh;
+      }
+    }
+    &-header-items {
+      margin-top: 1vh;
+      display: flex;
+      width: 90%;
+      font-size: 5vh;
+    }
+  }
+  .line2 {
+    background-color: $color-blue;
+    height: 3px;
+    margin: auto;
+    width: 90%;
   }
 }

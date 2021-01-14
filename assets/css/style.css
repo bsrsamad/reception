@@ -435,10 +435,6 @@
   font-size: 5vh;
 }
 
-.update-header-no {
-  width: 10%;
-}
-
 .update-header-name {
   width: 40%;
 }
@@ -461,6 +457,9 @@
 }
 
 @media screen and (max-width: 576px), (max-height: 550px) {
+  .flex {
+    display: block;
+  }
   .button {
     width: 25vh;
     padding: 0.5vh;
@@ -541,7 +540,7 @@
   }
   .openbtn {
     visibility: visible;
-    margin-left: 13vh;
+    margin-left: 15%;
     font-size: 6vh;
     border-radius: 10px;
   }
@@ -553,6 +552,85 @@
   }
   .login {
     width: 87%;
+  }
+  .update {
+    margin-left: 0vh;
+    margin-top: 1vh;
+    width: 100%;
+  }
+  .update-first {
+    width: 100%;
+    font-size: 1vh;
+    padding-left: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .update-first-submit {
+    width: 40%;
+  }
+  .update-first-submit-button {
+    width: 100%;
+    padding: 5px;
+    font-size: 3.7vh;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+  }
+  .update-first-submit-button:focus {
+    outline: none;
+  }
+  .update-first-input {
+    width: 70%;
+  }
+  .update-first-input-box {
+    width: 85%;
+    color: #2b2b9c;
+    padding: 6px 15px 6px 12px;
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+  .update-first-input-box::-webkit-input-placeholder {
+    color: white;
+  }
+  .update-first-input-box:focus {
+    outline: none;
+  }
+  .update-header {
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: 3vh;
+  }
+  .update-header-name {
+    width: 40%;
+    font-size: 3vh;
+    margin-left: 3vh;
+  }
+  .update-header-age {
+    width: 20%;
+    font-size: 3vh;
+    margin-left: 5vh;
+  }
+  .update-header-gender {
+    width: 40%;
+    font-size: 3vh;
+    margin-left: 2vh;
+  }
+  .update-header-items {
+    margin-top: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    font-size: 5vh;
+  }
+  .line2 {
+    background-color: #2b2b9c;
+    height: 3px;
+    margin: auto;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
