@@ -214,11 +214,10 @@ $font-family: avenir;
   font-family: $font-family;
   background: $color-white;
   width: 25rem;
-  align-self: center;
+
   border-radius: 35px;
 
   &-header {
-    text-align: center;
     padding-top: 1rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -230,6 +229,7 @@ $font-family: avenir;
     padding-bottom: 12vh;
     min-width: 1rem;
     max-width: 22rem;
+    margin: auto;
   }
 
   // &-form {
